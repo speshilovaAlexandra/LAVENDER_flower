@@ -36,8 +36,6 @@ php artisan storage:link -->
               </div>
             </router-link>
             <router-link to="/constructor" class="nav-link btn-constructor">Собери свой букет</router-link>
-            <!-- <router-link to="/ReviewsBlock" class="nav-link btn-ReviewsBlock">Отзывы</router-link> -->
-            <!-- <router-link to="/delivery">Доставка</router-link> -->
             <!-- Admin Dropdown / Group -->
             <template v-if="isAdmin">
               <div class="admin-group">
@@ -59,9 +57,6 @@ php artisan storage:link -->
             <router-link to="/login" class="nav-link btn-login">Вход</router-link>
             <router-link to="/register" class="nav-link btn-register">Регистрация</router-link>
             <router-link to="/constructor" class="nav-link btn-constructor">Собери свой букет</router-link>
-            <!-- <router-link to="/team" class="nav-link btn-team">Наша команда</router-link> -->
-            <!-- <router-link to="/ReviewsBlock" class="nav-link btn-ReviewsBlock">Отзывы</router-link> -->
-            <!-- <router-link to="/delivery">Доставка</router-link> -->
           </template>
         </nav>
       </div>
