@@ -7,10 +7,7 @@ import RegInView from '../views/RegInView.vue'
 import Profile from '../views/Profile.vue'
 import AdminFlowers from '../views/admin/AdminFlowers.vue'
 import AdminOrders from '../views/admin/AdminOrders.vue'
-import TeamView from '../views/TeamView.vue'
 import NotFound from '../views/NotFound.vue'
-import ReviewsBlock from '../views/ReviewsBlock.vue';
-import DeliveryView from '../views/DeliveryView.vue';
 import HomeView from '../views/HomeView.vue';
 import ConstructorView from '../views/ConstructorView.vue';
 
@@ -21,10 +18,7 @@ const router = createRouter({
     { path: '/product/:id', name: 'product', component: ProductView, props: true },
     { path: '/cart', name: 'cart', component: CartView, meta: { requiresAuth: true } },
     { path: '/login', name: 'login', component: LoginView },
-    { path: '/delivery', name: 'delivery', component: DeliveryView },
     { path: '/register', name: 'register', component: RegInView },
-    { path: '/team', name: 'team', component: TeamView },
-    { path: '/ReviewsBlock', name: 'ReviewsBlock', component: ReviewsBlock },
     { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound },
     { path: '/profile', name: 'profile', component: Profile, meta: { requiresAuth: true } },
     { path: '/admin/flowers', name: 'admin.flowers', component: AdminFlowers, meta: { requiresAuth: true, requiresAdmin: true }},
