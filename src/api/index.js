@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://speshisq.beget.tech/',
+  axios.get('/api/home')
   headers: {
     'Content-Type': 'application/json',
     // 'Accept': 'application/json',
