@@ -1,9 +1,12 @@
 {
   "rewrites": [
     { 
-      "source": "/api/flowers/:path*", 
-      "destination": "http://speshisq.beget.tech/flowers/:path*" 
+      "source": "/api/:path*", 
+      "destination": "http://speshisq.beget.tech/:path*" 
     },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { 
+      "source": "/(.*)", 
+      "destination": "/index.html" 
+    }
   ]
 }
